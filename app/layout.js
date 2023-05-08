@@ -2,13 +2,16 @@
 
 import StyledComponentsRegistry from "./lib/registry";
 import Header from "./header/page";
+import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <Header />
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

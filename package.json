@@ -12,6 +12,8 @@
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "reset-css": "^5.0.1",
+    "resetcss": "^1.0.3",
     "styled-components": "^6.0.0-rc.1"
   }
 }
