@@ -1,5 +1,5 @@
-import Header from "./header/page";
+import Banner from "./banner/page";
 
 export default function Home() {
-  return <></>;
+  return <Banner></Banner>;
 }
