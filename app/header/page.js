@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import {
   Gnb,
   GnbArea,
@@ -19,6 +22,8 @@ import {
 } from "./header.style";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <HeaderWrapper>
       {/* headerTop */}
@@ -38,7 +43,13 @@ export default function Header() {
       <HeaderMain>
         <HeaderMainInner>
           <HeaderTitle>
-            <HeaderMainLogo>Dream</HeaderMainLogo>
+            <HeaderMainLogo
+              onClick={() => {
+                router.push("/");
+              }}
+            >
+              Dream
+            </HeaderMainLogo>
           </HeaderTitle>
           <HeaderCenter></HeaderCenter>
           <HeaderMainRight>
@@ -46,16 +57,32 @@ export default function Header() {
               <Gnb>
                 <GnbList>
                   <GnbListItem>
-                    <GnbLink style={{ fontWeight: "700" }}>HOME</GnbLink>
+                    <GnbLink
+                      style={{ fontWeight: "700" }}
+                      onClick={() => {
+                        router.push("/");
+                      }}
+                    >
+                      HOME
+                    </GnbLink>
                   </GnbListItem>
                   <GnbListItem>
-                    <GnbLink>STYLE</GnbLink>
+                    <GnbLink
+                      onClick={() => {
+                        router.push("/list");
+                      }}
+                    >
+                      STYLE
+                    </GnbLink>
                   </GnbListItem>
                   <GnbListItem>
-                    <GnbLink>SHOP</GnbLink>
-                  </GnbListItem>
-                  <GnbListItem>
-                    <GnbLink>MY</GnbLink>
+                    <GnbLink
+                      onClick={() => {
+                        router.push("/submit");
+                      }}
+                    >
+                      Submit
+                    </GnbLink>
                   </GnbListItem>
                 </GnbList>
               </Gnb>
@@ -64,9 +91,6 @@ export default function Header() {
         </HeaderMainInner>
       </HeaderMain>
       {/* Portal_target */}
-      <div>
-        <div></div>
-      </div>
     </HeaderWrapper>
   );
 }

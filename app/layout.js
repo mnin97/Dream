@@ -1,5 +1,3 @@
-"use client";
-
 import StyledComponentsRegistry from "./lib/registry";
 import Header from "./header/page";
 import "./globals.css";

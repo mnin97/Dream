@@ -7,7 +7,6 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   height: 130px;
   background-color: #fff;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -97,7 +96,6 @@ export const GnbArea = styled.div`
 
 export const Gnb = styled.div`
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
 `;
 
 export const GnbList = styled.ul`
