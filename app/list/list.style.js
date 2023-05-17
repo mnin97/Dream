@@ -73,3 +73,11 @@ export const ButtonStyle = styled.button`
     transition: 800ms ease all;
   }
 `;
+
+export const ImageBox = styled.div`
+  width: 100px;
+  height: 70px;
+  border: 2px solid #000;
+  margin-left: auto;
+  margin-bottom: auto;
+`;
