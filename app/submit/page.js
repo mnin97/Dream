@@ -14,7 +14,7 @@ export default function SubmitPage() {
     <>
       <WriteWrapper>
         <ProductSubmitTitleWrapper>
-          <h4>상품 등록</h4>
+          <h4>스타일 등록</h4>
         </ProductSubmitTitleWrapper>
         <form action="/dream/pages/api/post/new.js" method="POST">
           <ProductWrapper>
@@ -22,11 +22,11 @@ export default function SubmitPage() {
             <input />
           </ProductWrapper>
           <ProductWrapper>
-            <h4>상품 요약</h4>
+            <h4>스타일 요약</h4>
             <input style={{ marginLeft: "30px" }} />
           </ProductWrapper>
           <ProductWrapper style={{ height: "400px" }}>
-            <h4>상품 내용</h4>
+            <h4>스타일 내용</h4>
             <input style={{ marginLeft: "30px" }} />
           </ProductWrapper>
         </form>
