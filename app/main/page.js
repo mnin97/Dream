@@ -30,10 +30,11 @@ export default function MainPage() {
           <BannerImg src="/head.png"></BannerImg>
         </Slider>
         <StyleBookWrapper>
-          <StyleBook></StyleBook>
-          <StyleBook></StyleBook>
-          <StyleBook></StyleBook>
-          <StyleBook></StyleBook>
+          {/* 이미지 나오는 곳 */}
+          <StyleBook>11</StyleBook>
+          <StyleBook>1</StyleBook>
+          <StyleBook>1</StyleBook>
+          <StyleBook>1</StyleBook>
         </StyleBookWrapper>
       </MainWrapper>
     </>
