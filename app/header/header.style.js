@@ -29,6 +29,7 @@ export const HeaderToplist = styled.ul`
   display: flex;
   align-items: center;
   margin-left: auto;
+  margin-top: 20px;
 `;
 
 export const HeaderToplistItem = styled.li`
@@ -37,7 +38,7 @@ export const HeaderToplistItem = styled.li`
   margin-left: 24px;
 `;
 
-export const HeaderTopLink = styled.a`
+export const HeaderTopLink = styled.span`
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -70,7 +71,7 @@ export const HeaderTitle = styled.h1`
   font-weight: bold;
 `;
 
-export const HeaderMainLogo = styled.a`
+export const HeaderMainLogo = styled.span`
   display: flex;
   width: 120px;
   height: 24px;
@@ -101,13 +102,14 @@ export const Gnb = styled.div`
 export const GnbList = styled.ul`
   display: flex;
   align-items: center;
+  margin-top: 35px;
 `;
 
 export const GnbListItem = styled.li`
   margin-right: 40px;
 `;
 
-export const GnbLink = styled.a`
+export const GnbLink = styled.span`
   display: flex;
   font-size: 18px;
   letter-spacing: -0.27px;
